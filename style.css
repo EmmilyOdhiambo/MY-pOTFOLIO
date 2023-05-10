@@ -1,0 +1,49 @@
+body{
+    /* border: 40px  solid #fff;   */
+    border-top:  40px brown solid;
+    border-left: 50px brown solid ; 
+    border-right: 50px brown solid ;
+    /* border-bottom:  40px brown solid; */
+   padding: 3%; 
+   border-radius: 2%;
+    background-image: url( "blue.jpg");
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    background-size: cover;
+ 
+}
+h1{
+font-size: large;  
+color: orange; 
+font-style: inherit;
+}
+.navs a:hover{
+    color:goldenrod;
+}
+.icons{
+    gap: 255%;
+}
+ul h1{
+    gap: 10%;
+}
+.int{
+    color: white;
+    margin-left: 110px;
+    font-size: 30px;
+    padding-top: 75px;
+    font-weight: 300px;
+    display: flex;
+  
+}
+header{
+    display: flex;
+}
+.navs{
+    margin-top: 100px;
+    margin-left: 100px; 
+}
+.navs a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
