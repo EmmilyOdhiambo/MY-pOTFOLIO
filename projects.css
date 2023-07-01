@@ -1,33 +1,22 @@
 
-html{
-    font-size: 63;
-    overflow-x: hidden;
-}
-*::selection{
-    background: var(--yellow);
-    color: #333;
-    /* color: #eee; */
-
-}
 body{
     background: #111;
     overflow-x: hidden;
-}
+ }
 header{
-    position: fixed;
+    position: fixed; 
     top: 0%;left: 0%;
     z-index: 1000;
     height:100%;
     width: 35rem;
     background: #1a1a1a;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    padding-left: 15%;
+    padding-left: 7%; 
 
-}
+ } 
 header .User img{
     height: 25rem;
     width: 24rem;
@@ -35,8 +24,8 @@ header .User img{
     object-fit: cover;
     margin-bottom: 1rem;
     border:7rem solid var(--yellow) ;
-    padding-right: 5%;
-}
+    padding-right: 3%;
+} 
 header .User .name{
     font-size: 3.5rem;
     color: #fff;
@@ -64,10 +53,10 @@ header .navbar ul li a{
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
-}
-header .navbar ul li a:hover{
+}header .navbar ul li a:hover{
     background: yellow;
 }
+
 #menu{
     position: fixed;
     top: 2rem;right: 2rem;
@@ -78,40 +67,53 @@ header .navbar ul li a:hover{
     padding:1rem 1.5rem;
     z-index: 1000;
     display: none;
-} 
-.Abouut {
-    /* display: flex; */
-    flex-flow: column;
-    padding-top: 1%;
+}
+
+/* .projects .box-container{
+    display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-left: 50%; */
+/* }  */
+/* .projects .box-container.box{ */
+    /* height: 20rem; */
+    /* width: 20rem; */
+    /* border-radius:1 rem; */
+    /* margin: 2rem; */
+    /* overflow: hidden; */
+    /* cursor: pointer; */
+
+/* } */
+/* .projects .box-container.box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   grid-gap: 20px; 
+} */
+.box-container.box:hover img{
+    transform: scale(1,2);
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding-left: 35%;
+    padding-top: 5%;
+    row-gap: 10%;
+    border-radius: 3%;
+}
+.box{
+    height: 70%;
+   width: 70%;
+   gap: 2%;
+   border-radius: 3%;
+}
+.heading{
     padding-left: 45%;
-}
-
-.Abouut h1{
-    font-size: 5rem;
-    color: darkgoldenrod;
-    /* padding-top: 5%; */
-}
-.Abouut h{
-    font-size: 5rem;
     color: #fff;
-    /* padding-top: 5%; */
+    font-size: 80px;
 }
-.Abouut p{
-    font-size: 35px;
-    color: #eee;
-
-}
-.resume{
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 2rem;
-    border-radius: 35px;
-}
-
-.resume:hover{
-    background: darkgoldenrod;
-}
-

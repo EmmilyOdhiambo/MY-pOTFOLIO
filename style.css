@@ -1,49 +1,141 @@
+
+html{
+    font-size: 63;
+    overflow-x: hidden;
+}
+*::selection{
+    background: var(--yellow);
+    color: #333;
+
+}
 body{
-    /* border: 40px  solid #fff;   */
-    border-top:  40px brown solid;
-    border-left: 50px brown solid ; 
-    border-right: 50px brown solid ;
-    /* border-bottom:  40px brown solid; */
-   padding: 3%; 
-   border-radius: 2%;
-    background-image: url( "blue.jpg");
-    background-repeat: no-repeat;
-    backface-visibility: visible;
-    background-size: cover;
- 
-}
-h1{
-font-size: large;  
-color: orange; 
-font-style: inherit;
-}
-.navs a:hover{
-    color:goldenrod;
-}
-.icons{
-    gap: 255%;
-}
-ul h1{
-    gap: 10%;
-}
-.int{
-    color: white;
-    margin-left: 110px;
-    font-size: 30px;
-    padding-top: 75px;
-    font-weight: 300px;
-    display: flex;
-  
+    background: #111;
+    overflow-x: hidden;
 }
 header{
+    position: fixed;
+    top: 0%;left: 0%;
+    z-index: 1000;
+    height:100%;
+    width: 35rem;
+    background: #1a1a1a;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding-left: 15%;
+
 }
-.navs{
-    margin-top: 100px;
-    margin-left: 100px; 
+header .User img{
+    height: 25rem;
+    width: 24rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:7rem solid var(--yellow) ;
+    padding-right: 5%;
 }
-.navs a{
+header .User .name{
+    font-size: 3.5rem;
+    color: #fff;
+
+}
+header .User .post{
+    font-size: 2rem;
+    color: #eee
+
+}
+header .navbar{
+   width: 100%
+
+
+}
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+    background: yellow;
+}
+#menu{
+    position: fixed;
+    top: 2rem;right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+section{
+    min-height: 100vh;
+    padding-top: 5%;
+    position: fixed;
+
+}
+.home{
+    display: flex;
+    flex-flow: column;
+    padding-top: 8%;
+    padding-left: 50%;
+}
+
+.home h3{
+    font-size: 5rem;
+    color: #fff;
+    /* padding-top: 5%; */
+}
+
+.home h{
+    font-size: 4rem;
+    color: gold;
+    /* padding-top: 5%; */
+}
+
+.home p{
+    font-size: 45px;
+    color: #eee;
+
+}
+.btn{
     padding: 20px;
-    color: white;
-    text-decoration: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 35px;
 }
+.btn p{
+    /* padding: 0 5rem; */
+    font: size 2rem;
+}
+.btn:hover{
+    background: yellow;
+}
+.links {
+    text-align: center;
+  }
+
+  .links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    color: #007bff;
+  }
